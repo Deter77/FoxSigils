@@ -1,0 +1,325 @@
+gui:
+  title: "&f七七七七七七七七ሄ"
+  size: 27
+  slots:
+    sigil1: 12
+    sigil2: 13
+    sigil3: 14
+    info: 22
+  items:
+    locked_slot:
+      material: COPPER_INGOT
+      name: "&c&lZablokowany slot"
+      lore:
+        - "&7Ten slot jest zablokowany"
+        - "&7Użyj &#6D411E&lRozszerzenia Sigili &r&7aby go odblokować"
+      custom_model_data: 650001
+    empty_slot:
+      material: AIR
+      name: "&e&lSlot na sigile #{slot}"
+      lore:
+        - "&7Umieść tutaj sigila"
+      custom_model_data: 0
+    info:
+      material: EMERALD
+      name: "&x&0&0&F&F&F&F&lK&x&0&4&F&F&F&7&lo&x&0&8&F&F&F&0&lm&x&0&C&F&F&E&8&lb&x&1&0&F&F&E&0&li&x&1&4&F&F&D&9&ln&x&1&8&F&F&D&1&la&x&1&C&F&F&C&9&lc&x&2&1&F&F&C&2&lj&x&2&5&F&F&B&A&le &x&2&D&F&F&A&A&lS&x&3&1&F&F&A&3&li&x&3&5&F&F&9&B&lg&x&3&9&F&F&9&3&li&x&3&D&F&F&8&C&ll&x&4&1&F&F&8&4&li"
+      lore:
+        - "&7Aktywne sigile:"
+        - "&e{sigils}"
+        - ""
+        - "&fWkrótce &#00FFFFK&#04FFF7o&#08FFF0m&#0CFFE8b&#10FFE0i&#14FFD9n&#18FFD1a&#1CFFC9c&#21FFC2j&#25FFBAe &#2DFFAAS&#31FFA3i&#35FF9Bg&#39FF93i&#3DFF8Cl&#41FF84i&f..."
+      custom_model_data: 1010
+
+unlock_item:
+  material: IRON_INGOT
+  custom_model_data: 250001
+  name: "&x&6&D&4&1&1&E&lR&x&6&E&4&2&1&E&lo&x&6&F&4&4&1&E&lz&x&7&1&4&5&1&F&ls&x&7&2&4&6&1&F&lz&x&7&3&4&8&1&F&le&x&7&4&4&9&1&F&lr&x&7&6&4&A&2&0&lz&x&7&7&4&C&2&0&le&x&7&8&4&D&2&0&ln&x&7&9&4&E&2&0&li&x&7&A&5&0&2&0&le &x&7&D&5&2&2&1&lS&x&7&E&5&4&2&1&li&x&7&F&5&5&2&1&lg&x&8&1&5&6&2&2&li&x&8&2&5&8&2&2&ll&x&8&3&5&9&2&2&li"
+  lore:
+    - "&bOdblokujesz &ftym dodatkowy slot w systemie &x&6&D&1&E&6&B&lS&x&7&1&1&F&6&4&li&x&7&4&1&F&5&D&lg&x&7&8&2&0&5&6&li&x&7&C&2&1&4&F&ll&x&7&F&2&1&4&8&li&x&8&3&2&2&4&1&li"
+    - "&eKliknij PPM &faby użyć"
+
+settings:
+  local_check_interval_ticks: 100
+
+sigils:
+  fire_ash:
+    type: FIRE
+    material: RAW_GOLD
+    custom_model_data: 250001
+    name: "&x&B&5&2&7&1&3&lS&x&B&8&2&C&1&5&li&x&B&C&3&1&1&8&lg&x&B&F&3&6&1&A&li&x&C&3&3&A&1&D&ll &x&C&A&4&4&2&2&lP&x&C&D&4&9&2&4&lo&x&D&0&4&E&2&6&lp&x&D&4&5&3&2&9&li&x&D&7&5&7&2&B&lo&x&D&B&5&C&2&E&lł&x&D&E&6&1&3&0&lu"
+    lore: ["&7Typ: &x&B&5&2&7&1&3O&x&B&F&3&6&1&Ag&x&C&A&4&4&2&2i&x&D&4&5&3&2&9e&x&D&E&6&1&3&0ń", "&fZmniejsza obrażenia od", "&cognia &fo &e55%"]
+    config:
+      reduction_percent: 55
+  fire_flame:
+    type: FIRE
+    material: RAW_GOLD
+    custom_model_data: 450001
+    name: "&x&B&5&2&7&1&3&lS&x&B&8&2&B&1&5&li&x&B&B&2&F&1&7&lg&x&B&E&3&3&1&9&li&x&C&1&3&8&1&B&ll &x&C&7&4&0&1&F&lP&x&C&A&4&4&2&2&lł&x&C&C&4&8&2&4&lo&x&C&F&4&C&2&6&lm&x&D&2&5&0&2&8&li&x&D&5&5&5&2&A&le&x&D&8&5&9&2&C&ln&x&D&B&5&D&2&E&li&x&D&E&6&1&3&0&la"
+    lore: ["&7Typ: &x&B&5&2&7&1&3O&x&B&F&3&6&1&Ag&x&C&A&4&4&2&2i&x&D&4&5&3&2&9e&x&D&E&6&1&3&0ń", "&fZwiększa obrażenia &6wręcz", "&e+10% &fsiły uderzenia"]
+    config:
+      damage_percent: 10
+  fire_heat:
+    type: FIRE
+    material: RAW_GOLD
+    custom_model_data: 650001
+    name: "&x&B&5&2&7&1&3&lS&x&B&A&2&D&1&6&li&x&B&E&3&4&1&9&lg&x&C&3&3&A&1&D&li&x&C&7&4&1&2&0&ll &x&D&0&4&E&2&6&lŻ&x&D&5&5&4&2&A&la&x&D&9&5&B&2&D&lr&x&D&E&6&1&3&0&lu"
+    lore: ["&7Typ: &x&B&5&2&7&1&3O&x&B&F&3&6&1&Ag&x&C&A&4&4&2&2i&x&D&4&5&3&2&9e&x&D&E&6&1&3&0ń", "&fWiększe obrażenia, gdy &4płoniesz", "&e+18% &fcałkowitych obrażeń"]
+    config:
+      damage_percent: 18
+  fire_warrior:
+    type: FIRE
+    material: RAW_GOLD
+    custom_model_data: 850001
+    name: "&x&B&5&2&7&1&3&lS&x&B&8&2&B&1&5&li&x&B&B&2&F&1&7&lg&x&B&E&3&3&1&9&li&x&C&1&3&8&1&B&ll &x&C&7&4&0&1&F&lW&x&C&A&4&4&2&2&lo&x&C&C&4&8&2&4&lj&x&C&F&4&C&2&6&lo&x&D&2&5&0&2&8&lw&x&D&5&5&5&2&A&ln&x&D&8&5&9&2&C&li&x&D&B&5&D&2&E&lk&x&D&E&6&1&3&0&la"
+    lore: ["&7Typ: &x&B&5&2&7&1&3O&x&B&F&3&6&1&Ag&x&C&A&4&4&2&2i&x&D&4&5&3&2&9e&x&D&E&6&1&3&0ń", "&fWiększe obrażenia, gdy twoje &4HP<3 serca", "&e+14% &fcałkowitych obrażeń"]
+    config:
+      damage_percent: 14
+      below_health: 6
+  fire_hell:
+    type: FIRE
+    material: RAW_GOLD
+    custom_model_data: 1050001
+    name: "&x&B&5&2&7&1&3&lS&x&B&9&2&C&1&6&li&x&B&C&3&2&1&8&lg&x&C&0&3&7&1&B&li&x&C&4&3&C&1&E&ll &x&C&B&4&7&2&3&lP&x&C&F&4&C&2&5&li&x&D&3&5&1&2&8&le&x&D&7&5&6&2&B&lk&x&D&A&5&C&2&D&lł&x&D&E&6&1&3&0&la"
+    lore: ["&7Typ: &x&B&5&2&7&1&3O&x&B&F&3&6&1&Ag&x&C&A&4&4&2&2i&x&D&4&5&3&2&9e&x&D&E&6&1&3&0ń", "&fWiększe obrażenia w &cNetherze", "&e+23% &fcałkowitych obrażeń"]
+    config:
+      damage_percent: 23
+  water_wave:
+    type: WATER
+    material: LAPIS_LAZULI
+    custom_model_data: 250001
+    name: "&x&2&3&7&8&B&0&lS&x&1&F&8&1&B&9&li&x&1&B&8&A&C&2&lg&x&1&7&9&3&C&A&li&x&1&3&9&C&D&3&ll &x&0&C&A&D&E&5&lF&x&0&8&B&6&E&D&la&x&0&4&B&F&F&6&ll&x&0&0&C&8&F&F&li"
+    lore: ["&7Typ: &x&2&3&7&8&B&0W&x&1&7&9&3&C&Ao&x&0&C&A&D&E&5d&x&0&0&C&8&F&Fa", "&fPrzy uderzeniu daje", "&e10% szans &fna silne &bodepchnięcie"]
+    config:
+      chance_percent: 10
+      knockback_strength: 2.4
+  water_frost:
+    type: WATER
+    material: LAPIS_LAZULI
+    custom_model_data: 450001
+    name: "&x&2&3&7&8&B&0&lS&x&2&0&8&0&B&8&li&x&1&C&8&8&C&0&lg&x&1&9&9&0&C&8&li&x&1&5&9&8&D&0&ll &x&0&E&A&8&D&F&lM&x&0&B&B&0&E&7&lr&x&0&7&B&8&E&F&lo&x&0&4&C&0&F&7&lz&x&0&0&C&8&F&F&lu"
+    lore: ["&7Typ: &x&2&3&7&8&B&0W&x&1&7&9&3&C&Ao&x&0&C&A&D&E&5d&x&0&0&C&8&F&Fa", "&fPrzy uderzeniu daje", "&e50% szans &fna &8spowolnienie &fo &e20% na 2s"]
+    config:
+      chance_percent: 50
+      slow_percent: 20
+      duration_seconds: 2
+  water_regeneration:
+    type: WATER
+    material: LAPIS_LAZULI
+    custom_model_data: 650001
+    name: "&x&2&3&7&8&B&0&lS&x&2&1&7&D&B&5&li&x&1&F&8&2&B&A&lg&x&1&C&8&7&B&F&li&x&1&A&8&C&C&4&ll &x&1&6&9&6&C&E&lR&x&1&4&9&B&D&3&le&x&1&2&A&0&D&8&lg&x&0&F&A&5&D&C&le&x&0&D&A&A&E&1&ln&x&0&B&A&F&E&6&le&x&0&9&B&4&E&B&lr&x&0&7&B&9&F&0&la&x&0&4&B&E&F&5&lc&x&0&2&C&3&F&A&lj&x&0&0&C&8&F&F&li"
+    lore: ["&7Typ: &x&2&3&7&8&B&0W&x&1&7&9&3&C&Ao&x&0&C&A&D&E&5d&x&0&0&C&8&F&Fa", "&fLeczy cię o", "&4+0.5 &fserca co &e10s"]
+    config:
+      heal_health: 1
+      every_seconds: 10
+  water_healing:
+    type: WATER
+    material: LAPIS_LAZULI
+    custom_model_data: 850001
+    name: "&x&2&3&7&8&B&0&lS&x&2&1&7&D&B&5&li&x&1&F&8&2&B&A&lg&x&1&C&8&7&B&F&li&x&1&A&8&C&C&4&ll &x&1&6&9&6&C&E&lU&x&1&4&9&B&D&3&lz&x&1&2&A&0&D&8&ld&x&0&F&A&5&D&C&lr&x&0&D&A&A&E&1&lo&x&0&B&A&F&E&6&lw&x&0&9&B&4&E&B&li&x&0&7&B&9&F&0&le&x&0&4&B&E&F&5&ln&x&0&2&C&3&F&A&lj&x&0&0&C&8&F&F&la"
+    lore: ["&7Typ: &x&2&3&7&8&B&0W&x&1&7&9&3&C&Ao&x&0&C&A&D&E&5d&x&0&0&C&8&F&Fa", "&fPrzy otrzymaniu &cobrażeń &fdaje", "&e15% szans &fna odzyskanie &41 serca"]
+    config:
+      chance_percent: 15
+      heal_health: 2
+  water_depth:
+    type: WATER
+    material: LAPIS_LAZULI
+    custom_model_data: 1050001
+    name: "&x&2&3&7&8&B&0&lS&x&2&0&8&0&B&8&li&x&1&C&8&8&C&0&lg&x&1&9&9&0&C&8&li&x&1&5&9&8&D&0&ll &x&0&E&A&8&D&F&lG&x&0&B&B&0&E&7&lł&x&0&7&B&8&E&F&lę&x&0&4&C&0&F&7&lb&x&0&0&C&8&F&F&li"
+    lore: ["&7Typ: &x&2&3&7&8&B&0W&x&1&7&9&3&C&Ao&x&0&C&A&D&E&5d&x&0&0&C&8&F&Fa", "&fWydłuża czas oddychania pod &9wodą", "&fo &e250%"]
+    config:
+      air_percent: 250
+  earth_strength:
+    type: EARTH
+    material: QUARTZ
+    custom_model_data: 250001
+    name: "&x&5&8&3&9&1&6&lS&x&5&B&3&A&1&6&li&x&5&D&3&C&1&6&lg&x&6&0&3&D&1&6&li&x&6&3&3&F&1&6&ll &x&6&8&4&1&1&6&lW&x&6&B&4&3&1&6&lz&x&6&E&4&4&1&6&lm&x&7&0&4&5&1&5&lo&x&7&3&4&7&1&5&lc&x&7&6&4&8&1&5&ln&x&7&8&4&A&1&5&li&x&7&B&4&B&1&5&le&x&7&E&4&C&1&5&ln&x&8&0&4&E&1&5&li&x&8&3&4&F&1&5&la"
+    lore: ["&7Typ: &x&5&8&3&9&1&6Z&x&6&1&3&D&1&6i&x&6&9&4&2&1&6e&x&7&2&4&6&1&5m&x&7&A&4&B&1&5i&x&8&3&4&F&1&5a", "&fTrwały bonus &cHP", "&4+2 serca"]
+    config:
+      extra_health: 4
+  earth_stone:
+    type: EARTH
+    material: QUARTZ
+    custom_model_data: 450001
+    name: "&x&5&8&3&9&1&6&lS&x&5&B&3&B&1&6&li&x&5&F&3&C&1&6&lg&x&6&2&3&E&1&6&li&x&6&5&4&0&1&6&ll &x&6&C&4&3&1&6&lK&x&6&F&4&5&1&5&la&x&7&2&4&7&1&5&lm&x&7&6&4&8&1&5&li&x&7&9&4&A&1&5&le&x&7&C&4&C&1&5&ln&x&8&0&4&D&1&5&li&x&8&3&4&F&1&5&la"
+    lore: ["&7Typ: &x&5&8&3&9&1&6Z&x&6&1&3&D&1&6i&x&6&9&4&2&1&6e&x&7&2&4&6&1&5m&x&7&A&4&B&1&5i&x&8&3&4&F&1&5a", "&fRedukcja wszelkich &6obrażeń", "&e-8% &fotrzymywanych obrażeń"]
+    config:
+      reduction_percent: 8
+  earth_roots:
+    type: EARTH
+    material: QUARTZ
+    custom_model_data: 650001
+    name: "&x&5&8&3&9&1&6&lS&x&5&C&3&B&1&6&li&x&5&F&3&D&1&6&lg&x&6&3&3&F&1&6&li&x&6&6&4&0&1&6&ll &x&6&E&4&4&1&6&lK&x&7&1&4&6&1&5&lo&x&7&5&4&8&1&5&lr&x&7&8&4&A&1&5&lz&x&7&C&4&B&1&5&le&x&7&F&4&D&1&5&ln&x&8&3&4&F&1&5&li"
+    lore: ["&7Typ: &x&5&8&3&9&1&6Z&x&6&1&3&D&1&6i&x&6&9&4&2&1&6e&x&7&2&4&6&1&5m&x&7&A&4&B&1&5i&x&8&3&4&F&1&5a", "&fDaje trwałą &bodporność &fna odpychanie", "&ePełna &fodporność"]
+    config:
+      knockback_resistance: 1
+  earth_soil:
+    type: EARTH
+    material: QUARTZ
+    custom_model_data: 850001
+    name: "&x&5&8&3&9&1&6&lS&x&5&C&3&B&1&6&li&x&6&1&3&D&1&6&lg&x&6&5&4&0&1&6&li&x&6&9&4&2&1&6&ll &x&7&2&4&6&1&5&lG&x&7&6&4&8&1&5&ll&x&7&A&4&B&1&5&le&x&7&F&4&D&1&5&lb&x&8&3&4&F&1&5&ly"
+    lore: ["&7Typ: &x&5&8&3&9&1&6Z&x&6&1&3&D&1&6i&x&6&9&4&2&1&6e&x&7&2&4&6&1&5m&x&7&A&4&B&1&5i&x&8&3&4&F&1&5a", "&fGdy stoisz na &2ziemi", "&e-15% &fwszelkich otrzymywanych obrażeń"]
+    config:
+      reduction_percent: 15
+      blocks: [GRASS_BLOCK, DIRT]
+  earth_boulder:
+    type: EARTH
+    material: QUARTZ
+    custom_model_data: 1050001
+    name: "&x&5&8&3&9&1&6&lS&x&5&C&3&B&1&6&li&x&6&1&3&D&1&6&lg&x&6&5&4&0&1&6&li&x&6&9&4&2&1&6&ll &x&7&2&4&6&1&5&lG&x&7&6&4&8&1&5&lł&x&7&A&4&B&1&5&la&x&7&F&4&D&1&5&lz&x&8&3&4&F&1&5&lu"
+    lore: ["&7Typ: &x&5&8&3&9&1&6Z&x&6&1&3&D&1&6i&x&6&9&4&2&1&6e&x&7&2&4&6&1&5m&x&7&A&4&B&1&5i&x&8&3&4&F&1&5a", "&fGdy &dstoisz &fw miejscu", "&e-18% &fwszelkich otrzymywanych obrażeń"]
+    config:
+      reduction_percent: 18
+      movement_epsilon_squared: 0.0009
+  wind_breeze:
+    type: WIND
+    material: AMETHYST_SHARD
+    custom_model_data: 250001
+    name: "&x&7&0&8&D&8&6&lS&x&7&8&9&6&8&F&li&x&7&F&9&F&9&8&lg&x&8&7&A&7&A&0&li&x&8&F&B&0&A&9&ll &x&9&E&C&2&B&B&lP&x&A&6&C&A&C&3&lo&x&A&E&D&3&C&C&ld&x&B&5&D&C&D&5&lm&x&B&D&E&5&D&E&lu&x&C&5&E&D&E&6&lc&x&C&C&F&6&E&F&lh&x&D&4&F&F&F&8&lu"
+    lore: ["&7Typ: &x&7&0&8&D&8&6W&x&8&9&A&A&A&3i&x&A&2&C&6&B&Fa&x&B&B&E&3&D&Ct&x&D&4&F&F&F&8r", "&bPrzyspiesza &ftwoją prędkość ruchu", "&e+15% &fprędkości"]
+    config:
+      speed_percent: 15
+  wind_gust:
+    type: WIND
+    material: AMETHYST_SHARD
+    custom_model_data: 450001
+    name: "&x&7&0&8&D&8&6&lS&x&7&9&9&7&9&0&li&x&8&2&A&2&9&B&lg&x&8&B&A&C&A&5&li&x&9&4&B&6&A&F&ll &x&A&7&C&B&C&4&lW&x&B&0&D&6&C&F&li&x&B&9&E&0&D&9&lc&x&C&2&E&A&E&3&lh&x&C&B&F&5&E&E&lr&x&D&4&F&F&F&8&lu"
+    lore: ["&7Typ: &x&7&0&8&D&8&6W&x&8&9&A&A&A&3i&x&A&2&C&6&B&Fa&x&B&B&E&3&D&Ct&x&D&4&F&F&F&8r", "&fDaje wyższy &askok", "&e+25% &fwysokości"]
+    config:
+      jump_percent: 25
+  wind_dodge:
+    type: WIND
+    material: AMETHYST_SHARD
+    custom_model_data: 650001
+    name: "&x&7&0&8&D&8&6&lS&x&7&A&9&8&9&1&li&x&8&4&A&4&9&D&lg&x&8&E&A&F&A&8&li&x&9&8&B&B&B&4&ll &x&A&C&D&1&C&A&lU&x&B&6&D&D&D&6&ln&x&C&0&E&8&E&1&li&x&C&A&F&4&E&D&lk&x&D&4&F&F&F&8&lu"
+    lore: ["&7Typ: &x&7&0&8&D&8&6W&x&8&9&A&A&A&3i&x&A&2&C&6&B&Fa&x&B&B&E&3&D&Ct&x&D&4&F&F&F&8r", "&fDaje szansę na całkowite &5uniknięcie &fobrażeń", "&e10% &fna unik"]
+    config:
+      chance_percent: 10
+  wind_glide:
+    type: WIND
+    material: AMETHYST_SHARD
+    custom_model_data: 850001
+    name: "&x&7&0&8&D&8&6&lS&x&7&7&9&5&8&E&li&x&7&D&9&C&9&5&lg&x&8&4&A&4&9&D&li&x&8&B&A&B&A&4&ll &x&9&8&B&B&B&4&lS&x&9&F&C&2&B&B&lz&x&A&5&C&A&C&3&ly&x&A&C&D&1&C&A&lb&x&B&3&D&9&D&2&lo&x&B&9&E&1&D&A&lw&x&C&0&E&8&E&1&la&x&C&7&F&0&E&9&ln&x&C&D&F&7&F&0&li&x&D&4&F&F&F&8&la"
+    lore: ["&7Typ: &x&7&0&8&D&8&6W&x&8&9&A&A&A&3i&x&A&2&C&6&B&Fa&x&B&B&E&3&D&Ct&x&D&4&F&F&F&8r", "&fZmniejsza obrażenia od &8upadku", "&fRedukcja o &e85%"]
+    config:
+      fall_reduction_percent: 85
+  wind_lightness:
+    type: WIND
+    material: AMETHYST_SHARD
+    custom_model_data: 1050001
+    name: "&x&7&0&8&D&8&6&lS&x&7&8&9&6&8&F&li&x&7&F&9&F&9&8&lg&x&8&7&A&7&A&0&li&x&8&F&B&0&A&9&ll &x&9&E&C&2&B&B&lL&x&A&6&C&A&C&3&le&x&A&E&D&3&C&C&lk&x&B&5&D&C&D&5&lk&x&B&D&E&5&D&E&lo&x&C&5&E&D&E&6&lś&x&C&C&F&6&E&F&lc&x&D&4&F&F&F&8&li"
+    lore: ["&7Typ: &x&7&0&8&D&8&6W&x&8&9&A&A&A&3i&x&A&2&C&6&B&Fa&x&B&B&E&3&D&Ct&x&D&4&F&F&F&8r", "&fGdy nie masz na sobie &6zbroi &fdaje", "&e+100% &fszybkości i &e+50% &fwysokości skoku"]
+    config:
+      speed_percent: 100
+      jump_percent: 50
+  dark_leech:
+    type: DARKNESS
+    material: IRON_NUGGET
+    custom_model_data: 250001
+    name: "&x&1&5&0&3&1&8&lS&x&1&7&0&5&1&A&li&x&1&9&0&7&1&D&lg&x&1&B&0&8&1&F&li&x&1&D&0&A&2&1&ll &x&2&1&0&E&2&6&lP&x&2&3&0&F&2&8&li&x&2&5&1&1&2&B&lj&x&2&7&1&3&2&D&la&x&2&9&1&5&2&F&lw&x&2&B&1&6&3&2&lk&x&2&D&1&8&3&4&li"
+    lore: ["&7Typ: &x&1&5&0&3&1&8C&x&1&8&0&6&1&Ci&x&1&C&0&9&2&0e&x&1&F&0&C&2&4m&x&2&3&0&F&2&8n&x&2&6&1&2&2&Co&x&2&A&1&5&3&0ś&x&2&D&1&8&3&4ć", "&fGdy &czabijesz &fgracza", "&fLeczy twoje &4HP &fdo pełna"]
+    config:
+      heal_to_full: true
+  dark_shadow:
+    type: DARKNESS
+    material: IRON_NUGGET
+    custom_model_data: 450001
+    name: "&x&1&5&0&3&1&8&lS&x&1&7&0&5&1&B&li&x&1&A&0&7&1&E&lg&x&1&C&0&9&2&0&li&x&1&F&0&B&2&3&ll &x&2&3&1&0&2&9&lM&x&2&6&1&2&2&C&lr&x&2&8&1&4&2&E&lo&x&2&B&1&6&3&1&lk&x&2&D&1&8&3&4&lu"
+    lore: ["&7Typ: &x&1&5&0&3&1&8C&x&1&8&0&6&1&Ci&x&1&C&0&9&2&0e&x&1&F&0&C&2&4m&x&2&3&0&F&2&8n&x&2&6&1&2&2&Co&x&2&A&1&5&3&0ś&x&2&D&1&8&3&4ć", "&fGdy jest &1noc", "&fWiększe obrażenia o &e12% &fi &e-15% &fotrzymywanych obrażeń"]
+    config:
+      damage_percent: 12
+      reduction_percent: 15
+      night_start: 13000
+      night_end: 23000
+  dark_shade:
+    type: DARKNESS
+    material: IRON_NUGGET
+    custom_model_data: 650001
+    name: "&x&1&5&0&3&1&8&lS&x&1&7&0&5&1&B&li&x&1&9&0&7&1&D&lg&x&1&C&0&9&2&0&li&x&1&E&0&B&2&2&ll &x&2&2&0&E&2&7&lC&x&2&4&1&0&2&A&li&x&2&6&1&2&2&C&le&x&2&9&1&4&2&F&ln&x&2&B&1&6&3&1&li&x&2&D&1&8&3&4&la"
+    lore: ["&7Typ: &x&1&5&0&3&1&8C&x&1&8&0&6&1&Ci&x&1&C&0&9&2&0e&x&1&F&0&C&2&4m&x&2&3&0&F&2&8n&x&2&6&1&2&2&Co&x&2&A&1&5&3&0ś&x&2&D&1&8&3&4ć", "&fPrzy uderzeniu daje", "&e15% szans &fna efekt &7Niewidzialności &fna 8s"]
+    config:
+      chance_percent: 15
+      duration_seconds: 8
+      amplifier: 0
+  dark_blind:
+    type: DARKNESS
+    material: IRON_NUGGET
+    custom_model_data: 850001
+    name: "&x&1&5&0&3&1&8&lS&x&1&7&0&4&1&A&li&x&1&8&0&6&1&C&lg&x&1&A&0&7&1&E&li&x&1&B&0&9&1&F&ll &x&1&F&0&B&2&3&lO&x&2&0&0&D&2&5&lś&x&2&2&0&E&2&7&ll&x&2&3&1&0&2&9&le&x&2&5&1&1&2&B&lp&x&2&7&1&2&2&D&li&x&2&8&1&4&2&E&le&x&2&A&1&5&3&0&ln&x&2&B&1&7&3&2&li&x&2&D&1&8&3&4&la"
+    lore: ["&7Typ: &x&1&5&0&3&1&8C&x&1&8&0&6&1&Ci&x&1&C&0&9&2&0e&x&1&F&0&C&2&4m&x&2&3&0&F&2&8n&x&2&6&1&2&2&Co&x&2&A&1&5&3&0ś&x&2&D&1&8&3&4ć", "&fPrzy otrzymaniu &cobrażeń &fdaje", "&e6% szans &fna efekt &8Oślepienia II &fna 10s dla wroga"]
+    config:
+      chance_percent: 6
+      duration_seconds: 10
+      amplifier: 1
+  dark_poison:
+    type: DARKNESS
+    material: IRON_NUGGET
+    custom_model_data: 1050001
+    name: "&x&1&5&0&3&1&8&lS&x&1&7&0&5&1&A&li&x&1&9&0&7&1&D&lg&x&1&B&0&8&1&F&li&x&1&D&0&A&2&1&ll &x&2&1&0&E&2&6&lO&x&2&3&0&F&2&8&lt&x&2&5&1&1&2&B&lr&x&2&7&1&3&2&D&la&x&2&9&1&5&2&F&lc&x&2&B&1&6&3&2&li&x&2&D&1&8&3&4&la"
+    lore: ["&7Typ: &x&1&5&0&3&1&8C&x&1&8&0&6&1&Ci&x&1&C&0&9&2&0e&x&1&F&0&C&2&4m&x&2&3&0&F&2&8n&x&2&6&1&2&2&Co&x&2&A&1&5&3&0ś&x&2&D&1&8&3&4ć", "&fPrzy uderzeniu daje", "&e5% szans &fna efekt &aZatrucia &fna 7s"]
+    config:
+      chance_percent: 5
+      duration_seconds: 7
+      amplifier: 0
+  light_faith:
+    type: LIGHT
+    material: GOLD_NUGGET
+    custom_model_data: 250001
+    name: "&x&F&F&D&7&0&0&lS&x&F&F&D&B&1&5&li&x&F&F&D&E&2&9&lg&x&F&F&E&2&3&E&li&x&F&F&E&5&5&2&ll &x&F&F&E&C&7&B&lW&x&F&F&F&0&9&0&li&x&F&F&F&3&A&4&la&x&F&F&F&7&B&9&lr&x&F&F&F&A&C&D&ly"
+    lore: ["&7Typ: &x&F&F&D&7&0&0Ś&x&F&F&D&B&1&Aw&x&F&F&E&0&3&3i&x&F&F&E&4&4&Da&x&F&F&E&9&6&7t&x&F&F&E&D&8&0ł&x&F&F&F&1&9&Ao&x&F&F&F&6&B&3ś&x&F&F&F&A&C&Dć", "&fGdy otrzymujesz negatywny &defekt", "&fdaje &e50% szans &fna anulowanie"]
+    config:
+      chance_percent: 50
+  light_hope:
+    type: LIGHT
+    material: GOLD_NUGGET
+    custom_model_data: 450001
+    name: "&x&F&F&D&7&0&0&lS&x&F&F&D&A&1&1&li&x&F&F&D&D&2&2&lg&x&F&F&E&0&3&3&li&x&F&F&E&3&4&4&ll &x&F&F&E&9&6&7&lN&x&F&F&E&B&7&8&la&x&F&F&E&E&8&9&ld&x&F&F&F&1&9&A&lz&x&F&F&F&4&A&B&li&x&F&F&F&7&B&C&le&x&F&F&F&A&C&D&li"
+    lore: ["&7Typ: &x&F&F&D&7&0&0Ś&x&F&F&D&B&1&Aw&x&F&F&E&0&3&3i&x&F&F&E&4&4&Da&x&F&F&E&9&6&7t&x&F&F&E&D&8&0ł&x&F&F&F&1&9&Ao&x&F&F&F&6&B&3ś&x&F&F&F&A&C&Dć", "&fGdy użyjesz &6totemu nieśmiertelności", "&fDostajesz dodatkowe &42 serca"]
+    config:
+      extra_health: 4
+  light_guardian:
+    type: LIGHT
+    material: GOLD_NUGGET
+    custom_model_data: 650001
+    name: "&x&F&F&D&7&0&0&lS&x&F&F&D&A&0&F&li&x&F&F&D&C&1&D&lg&x&F&F&D&F&2&C&li&x&F&F&E&1&3&B&ll &x&F&F&E&6&5&8&lS&x&F&F&E&9&6&7&lt&x&F&F&E&B&7&5&lr&x&F&F&E&E&8&4&la&x&F&F&F&0&9&2&lż&x&F&F&F&3&A&1&ln&x&F&F&F&5&B&0&li&x&F&F&F&8&B&E&lk&x&F&F&F&A&C&D&la"
+    lore: ["&7Typ: &x&F&F&D&7&0&0Ś&x&F&F&D&B&1&Aw&x&F&F&E&0&3&3i&x&F&F&E&4&4&Da&x&F&F&E&9&6&7t&x&F&F&E&D&8&0ł&x&F&F&F&1&9&Ao&x&F&F&F&6&B&3ś&x&F&F&F&A&C&Dć", "&fPrzy otrzymaniu &cobrażeń &fdaje", "&e10% szans &fna &bAbsorpcję II &fna 6s"]
+    config:
+      chance_percent: 10
+      duration_seconds: 6
+      amplifier: 1
+  light_radiance:
+    type: LIGHT
+    material: GOLD_NUGGET
+    custom_model_data: 850001
+    name: "&x&F&F&D&7&0&0&lS&x&F&F&D&A&1&3&li&x&F&F&D&D&2&5&lg&x&F&F&E&1&3&8&li&x&F&F&E&4&4&B&ll &x&F&F&E&A&7&0&lB&x&F&F&E&D&8&2&ll&x&F&F&F&0&9&5&la&x&F&F&F&4&A&8&ls&x&F&F&F&7&B&A&lk&x&F&F&F&A&C&D&lu"
+    lore: ["&7Typ: &x&F&F&D&7&0&0Ś&x&F&F&D&B&1&Aw&x&F&F&E&0&3&3i&x&F&F&E&4&4&Da&x&F&F&E&9&6&7t&x&F&F&E&D&8&0ł&x&F&F&F&1&9&Ao&x&F&F&F&6&B&3ś&x&F&F&F&A&C&Dć", "&fZmniejsza obrażenia innych o &e15%", "&fZwiększa twoje obrażenia o &e10%"]
+    config:
+      radius: 7
+      nearby_enemy_damage_reduction_percent: 15
+      self_damage_percent: 10
+  light_illumination:
+    type: LIGHT
+    material: GOLD_NUGGET
+    custom_model_data: 1050001
+    name: "&x&F&F&D&7&0&0&lS&x&F&F&D&9&0&B&li&x&F&F&D&B&1&7&lg&x&F&F&D&D&2&2&li&x&F&F&D&F&2&E&ll &x&F&F&E&3&4&4&lR&x&F&F&E&5&5&0&lo&x&F&F&E&7&5&B&lz&x&F&F&E&9&6&7&lś&x&F&F&E&A&7&2&lw&x&F&F&E&C&7&D&li&x&F&F&E&E&8&9&le&x&F&F&F&0&9&4&lt&x&F&F&F&2&9&F&ll&x&F&F&F&4&A&B&le&x&F&F&F&6&B&6&ln&x&F&F&F&8&C&2&li&x&F&F&F&A&C&D&la"
+    lore: ["&7Typ: &x&F&F&D&7&0&0Ś&x&F&F&D&B&1&Aw&x&F&F&E&0&3&3i&x&F&F&E&4&4&Da&x&F&F&E&9&6&7t&x&F&F&E&D&8&0ł&x&F&F&F&1&9&Ao&x&F&F&F&6&B&3ś&x&F&F&F&A&C&Dć", "&fStałe &3widzenie w ciemności", "&fPrzy uderzeniu &epodświetla wroga na 8s"]
+    config:
+      glowing_seconds: 8
+      night_vision_refresh_ticks: 400
+
+messages:
+  no_free_slot: "&cNie masz wolnego odblokowanego slotu na sigil."
+  inventory_full: "&cNie masz miejsca w ekwipunku."
+  slot_unlocked: "&aOdblokowano kolejny slot sigili."
+  all_slots_unlocked: "&eWszystkie sloty sigili są już odblokowane."
+  player_only: "&cTa komenda jest tylko dla gracza."
+  usage_admin: "&cUżycie: /sigile <unlock/lock> <gracz> <all/1/2/3>"
+  no_permission: "&cNie masz permisji foxsigile.admin."
+  player_not_found: "&cNie znaleziono gracza online."
+  bad_slot: "&cPodaj all, 1, 2 albo 3."
+  admin_unlocked: "&aOdblokowano wskazane sloty gracza."
+  admin_locked: "&cZablokowano wskazane sloty gracza."
+
+  duplicate_sigil: "&cNie możesz aktywować dwóch identycznych sigili."
+  readonly_edit_denied: "&cAby zmienić aktywne sigile udaj się do npc na spawn!"
+  usage_open: "&cUżycie: /sigileopen <gracz>"
+  opened_edit_gui: "&aOtwarto edytowalne GUI sigili gracza."
